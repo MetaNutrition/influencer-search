@@ -12,7 +12,17 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        *header here*
+        <ul>
+          <li>
+            Search
+          </li>
+          <li>
+            Saved
+          </li>
+          <li>
+            About
+          </li>
+        </ul>
       </header>
 
       <main className={styles.main}>
@@ -21,9 +31,11 @@ export default function Home() {
           TikTok Influencer Search
         </h1>
 
-        <p className={styles.description}>
+        <p className={styles.subtitle}>
           MetNu Internal Tool
         </p>
+
+        <p className={styles.startBox}>Get Started</p>
 
       </main>
 
