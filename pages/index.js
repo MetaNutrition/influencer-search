@@ -11,17 +11,15 @@ const Container = styled.div`
   flex-direction: column;
   height: 100vh;
 `
-
 const Main = styled.div`
   padding: 2rem 0;
   flex: 1;
   flex-direction: column;
   text-align: center;
 `
-
 const Button = styled.button`
   background: transparent;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 2px solid black;
   color: black;
   margin: 1rem;
@@ -33,6 +31,15 @@ const Button = styled.button`
   font-size: 1em;
   background: ${props => props.primary ? "black" : "transparent"};
   color: ${props => props.primary ? "white" : "black"};
+`
+const Title = styled.h1`
+  line-height: .5;
+  font-size: 4rem;
+`
+const Subtitle = styled.h2`
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 500;
 `
 
 const Home = () => {
@@ -47,8 +54,9 @@ const Home = () => {
       <Header />
 
       <Main>
-        <Button>Ding Dongus</Button>
-        <Button primary>Bong Bingus</Button>
+        <Title>TikTok Influencer Search</Title>
+        <Subtitle>MetNu Internal Tool</Subtitle>
+        <Button primary>Get Started</Button>
       </Main>
 
       <Footer />
