@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Container = styled.div`
   min-height: 100vh;
@@ -33,28 +35,26 @@ const Button = styled.button`
   color: ${props => props.primary ? "white" : "black"};
 `
 
+const Home = () => {
+  return (
+    <Container>
+      <Head>
+        <title>MetNu Influencer Search</title>
+        <meta name="description" content="Powered by NextJS and React" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <Head>
-          <title>MetNu Influencer Search</title>
-          <meta name="description" content="Powered by NextJS and React" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <Header />
 
-        <Container>
+      <Main>
+        <Button>Ding Dongus</Button>
+        <Button primary>Bong Bingus</Button>
+      </Main>
 
-          <Main>
-            <Button>Ding Dongus</Button>
-            <Button primary>Bong Bingus</Button>
-          </Main>
+      <Footer />
 
-        </Container>
-      </div>
-    )
-  }
+    </Container>
+  )
 }
 
 export default Home;
@@ -68,19 +68,19 @@ export default Home;
 //   <link rel="icon" href="/favicon.ico" />
 // </Head>
 
-//       <header className={styles.header}>
-//         <ul>
-//           <li>
-//             Search
-//           </li>
-//           <li>
-//             Saved
-//           </li>
-//           <li>
-//             About
-//           </li>
-//         </ul>
-//       </header>
+      // <header className={styles.header}>
+      //   <ul>
+      //     <li>
+      //       Search
+      //     </li>
+      //     <li>
+      //       Saved
+      //     </li>
+      //     <li>
+      //       About
+      //     </li>
+      //   </ul>
+      // </header>
 
 //       <main className={styles.main}>
 
@@ -97,13 +97,13 @@ export default Home;
 //       </main>
 
 //       <footer className={styles.footer}>
-//         <a
-//           href="https://www.metnu.com/"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           MetNu Home
-//         </a>
+        // <a
+        //   href="https://www.metnu.com/"
+        //   target="_blank"
+        //   rel="noopener noreferrer"
+        // >
+        //   MetNu Home
+        // </a>
 
 //       </footer>
 //     </div>
