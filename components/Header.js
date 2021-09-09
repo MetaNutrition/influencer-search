@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-// import Link from 'next/link'
+import Link from 'next/link'
 
 const NavBar = styled.header`
   width: 70%;
@@ -25,7 +25,7 @@ const NavItem = styled.li`
   border-bottom: 2px solid #eaeaea;
 `
 
-// Add primary tag to NavItem to display active tab on NavBar for each page
+// Will add primary tag to NavItem to display active tab on NavBar for each page
 const Header = () => {
   return (
     <NavBar>
@@ -50,4 +50,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

@@ -27,7 +27,7 @@ const Home = () => {
       </Head>
 
       <Header />
-      <p></p>
+
       <Main>
         <Title>TikTok Influencer Search</Title>
         <Subtitle>MetNu Internal Tool</Subtitle>
@@ -40,4 +40,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

@@ -16,4 +16,4 @@ const Button = styled.button`
   color: ${props => props.primary ? "white" : "black"};
 `
 
-export default Button;
+export default Button
