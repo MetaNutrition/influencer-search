@@ -1,24 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Container from '../components/Container'
+import Main from '../components/Main'
 import Button from '../components/Button'
 
-const Container = styled.div`
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-`
-const Main = styled.div`
-  padding: 2rem 0;
-  flex: 1;
-  flex-direction: column;
-  text-align: center;
-`
 const Title = styled.h1`
   line-height: .5;
   font-size: 4rem;
@@ -39,7 +27,7 @@ const Home = () => {
       </Head>
 
       <Header />
-
+      <p></p>
       <Main>
         <Title>TikTok Influencer Search</Title>
         <Subtitle>MetNu Internal Tool</Subtitle>

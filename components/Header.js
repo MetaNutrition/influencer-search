@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
+// import Link from 'next/link'
 
 const NavBar = styled.header`
   width: 70%;
@@ -29,6 +30,7 @@ const Header = () => {
     <NavBar>
       <NavList>
         <NavItem>
+          {/* Each NavItem will contain a Link component to route to respective pages */}
           Search
         </NavItem>
         <NavItem>
