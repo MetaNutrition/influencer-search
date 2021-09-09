@@ -25,19 +25,25 @@ const NavItem = styled.li`
   border-bottom: 2px solid #eaeaea;
 `
 
+// Add primary tag to NavItem to display active tab on NavBar for each page
 const Header = () => {
   return (
     <NavBar>
       <NavList>
         <NavItem>
-          {/* Each NavItem will contain a Link component to route to respective pages */}
-          Search
+          <Link href="/search">
+            Search
+          </Link>
         </NavItem>
         <NavItem>
-          Saved
+          <Link href="/saved">
+            Saved
+          </Link>
         </NavItem>
         <NavItem>
-          About
+          <Link href="/about">
+            About
+          </Link>
         </NavItem>
       </NavList>
     </NavBar>
