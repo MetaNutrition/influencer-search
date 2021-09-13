@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Container from '../components/Container'
-import Main from '../components/Main'
+import Header from '../src/layout/Header'
+import Footer from '../src/layout/Footer'
+import Container from '../src/layout/Container'
+import Main from '../src/layout/Main'
+import Button from '../src/ui/Button'
 
 const Search = () => {
   return (
