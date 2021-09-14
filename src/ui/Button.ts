@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-const Button = styled.button`
+type ButtonProp = {
+  primary: boolean
+}
+
+const Button = styled.button<ButtonProp>`
   background: transparent;
   border-radius: 5px;
   border: 2px solid black;
